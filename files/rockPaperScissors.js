@@ -23,3 +23,29 @@ const getComputerChoice = () => {
     }
 };
 
+const determineWinner = (userChoice, computerChoice) => {
+    if (userChoice === computerChoice) {
+        return 'It is a tie!';
+    }
+    if (userChoice === 'rock') {
+        if (computerChoice === 'paper') {
+            return 'Sorry! The computer won.';
+        } else {
+            return 'You are a winner baby!'
+        };
+    }
+    if (userChoice === 'paper') {
+        if (computerChoice === 'scissors') {
+            return 'Sorry! The computer won.';
+        } else {
+            return 'You are a winner baby!'
+        };
+    }
+    if (userChoice === 'scissors') {
+        if (computerChoice === 'rock') {
+            return 'Sorry! The computer won.';
+        } else {
+            return 'You are a winner baby!'
+        };
+    }
+}
